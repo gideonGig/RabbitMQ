@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InfraIoc", "InfraIoc", "{6B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{826FE38F-AF34-4F6A-A045-5066F8D20042}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroRabbit.Domain.Core", "MicroRabbit.Domain.Core\MicroRabbit.Domain.Core.csproj", "{E93A141E-4BA6-455F-996E-48065F550BE5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroRabbit.Domain.Core", "MicroRabbit.Domain.Core\MicroRabbit.Domain.Core.csproj", "{E93A141E-4BA6-455F-996E-48065F550BE5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,7 +30,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{E93A141E-4BA6-455F-996E-48065F550BE5} = {8D24E850-89B8-4EFF-AF79-A613899D194B}
+		{E93A141E-4BA6-455F-996E-48065F550BE5} = {8BDA0D6B-43C5-4E2E-B342-FB919A4BD20C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {085065B6-34B5-479E-B919-20258BC25BCF}
