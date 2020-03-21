@@ -28,7 +28,7 @@ namespace MicroRabbit.Infra.Bus
         }
 
 
-        public Task Command<T>(T command) where T : Command
+        public Task SendCommand<T>(T command) where T : Command
         {
             return _mediator.Send(command);
         }
