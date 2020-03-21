@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MediatR;
 using MicroRabbit.Banking.Data.Context;
 using MicroRabbit.Infra.IoC;
 using Microsoft.AspNetCore.Builder;
@@ -33,7 +34,7 @@ namespace MicroRabbit.Banking.Api
                 options.UseSqlServer(Configuration.GetConnectionString("BankingDbConnection"));
             });
             services.AddControllers();
-
+            services.AddMediatR(typeof(Startup));
             RegisterServices(services);
         }
 
