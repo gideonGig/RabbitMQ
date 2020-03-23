@@ -10,7 +10,7 @@ namespace MicroRabbit.Domain.Core.Commands
     {
         public DateTime Timestamp { get; protected set; }
 
-        protected Command()
+        public Command()
         {
             Timestamp = DateTime.Now;
         }
