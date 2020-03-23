@@ -1,4 +1,5 @@
 ﻿using MicroRabbit.Banking.Application.Interfaces;
+using MicroRabbit.Banking.Application.Models;
 using MicroRabbit.Banking.Domain.Interface;
 using MicroRabbit.Banking.Domain.Model;
 using System;
@@ -14,9 +15,16 @@ namespace MicroRabbit.Banking.Application.Services
         {
             _accountRepository = accountRepository;
         }
+
+       
         public IEnumerable<Account> GetAccounts()
         {
            return  _accountRepository.GetAccounts();
+        }
+
+        public void Transfer(AccountTansfer accountTransfer)
+        {
+            throw new NotImplementedException();
         }
     }
 }
