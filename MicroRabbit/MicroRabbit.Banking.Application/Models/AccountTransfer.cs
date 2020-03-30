@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MicroRabbit.Banking.Application.Models
 {
-    public class AccountTansfer
+    public class AccountTransfer
     {
         public int ToAccount { get; set; }
         public int FromAccount { get; set; }

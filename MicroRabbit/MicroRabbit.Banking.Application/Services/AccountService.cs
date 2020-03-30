@@ -26,7 +26,7 @@ namespace MicroRabbit.Banking.Application.Services
            return  _accountRepository.GetAccounts();
         }
 
-        public void Transfer(AccountTansfer accountTransfer)
+        public void Transfer(AccountTransfer accountTransfer)
         {
             var createTransferCommand = new CreateTransferCommand(
                 accountTransfer.FromAccount,

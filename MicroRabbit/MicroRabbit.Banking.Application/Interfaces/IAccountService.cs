@@ -10,6 +10,6 @@ namespace MicroRabbit.Banking.Application.Interfaces
     {
         IEnumerable<Account> GetAccounts();
 
-        void Transfer(AccountTansfer accountTransfer);
+        void Transfer(AccountTransfer accountTransfer);
     }
 }
