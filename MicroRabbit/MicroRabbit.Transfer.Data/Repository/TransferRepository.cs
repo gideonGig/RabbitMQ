@@ -10,11 +10,17 @@ namespace MicroRabbit.Transfer.Data.Repository
 {
     public class TransferRepository : ITransferRepository
     {
-        private readonly TransferDbContext _tdx;
+        private TransferDbContext _tdx;
 
         public TransferRepository(TransferDbContext tdx)
         {
             _tdx = tdx;
+        }
+
+        public void Add(TransferLog transferLog)
+        {
+            _tdx.Add(transferLog);
+            _tdx.SaveChanges();
         }
 
         public IEnumerable<TransferLog> GetTransferLogs()
