@@ -20,10 +20,10 @@ namespace MicroRabbit.Banking.Application.Services
             _bus = bus;
         }
 
-       
+
         public IEnumerable<Account> GetAccounts()
         {
-           return  _accountRepository.GetAccounts();
+            return _accountRepository.GetAccounts();
         }
 
         public void Transfer(AccountTransfer accountTransfer)
@@ -32,9 +32,8 @@ namespace MicroRabbit.Banking.Application.Services
                 accountTransfer.FromAccount,
                 accountTransfer.ToAccount,
                 accountTransfer.AccountAmount
-                ) ;
-
-            _bus.SendCommand(createTransferCommand);
+                );
+         _bus.SendCommand(createTransferCommand);
         }
     }
 }
